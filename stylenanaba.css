@@ -1,0 +1,417 @@
+
+.body{
+    margin:5px;
+    padding: 3px;
+    font-family: Arial;
+    line-height: 1.5;
+    background-color:white;
+   
+}
+
+.grid > div{
+    background-color: white; 
+        margin: 2px 2px 2px 2px; 
+        padding: 0px 1px 1px 1px;
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+        overflow: visible;
+    border: solid 1px green;
+    text-align: center;
+}
+.grid{
+    display: grid;
+   grid-template-columns: 1.5fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 1.5fr;
+   /*grid-template-columns: auto auto auto auto auto auto auto;*/
+    grid-template-rows: 1fr 1.2fr 5fr 2fr 6fr 1fr 1fr;
+    grid-column-gap: 5px;
+    
+    grid-template-areas: 
+    
+    "langues titre recherche"
+    "membres option1 option2 option3 option4 option5 lesoffres"
+    "laconnexion image1 image2 image3 image4 image5 lespartenaires"
+    "uncompte lemessage lesquestions"
+    "cartememebre messageclient lesnews"
+    "piedpage piedpage piedpage"
+    ;
+          
+}
+
+.langues{
+    background: goldenrod;
+    grid-column-start: 1;
+    grid-column-end:span 1;
+    grid-row-start:1;
+
+}
+.titre{
+    grid-column-start: 2;
+    grid-column-end:span 5;
+    grid-row-start:1;
+}
+.recherche{
+    grid-column-start: 7;
+    grid-column-end:span 1;
+    grid-row-start:1;
+}
+.membres{
+    background: goldenrod;
+    grid-column-start: 1;
+    grid-column-end:span 1;
+    grid-row-start:2;
+}
+
+.option1{
+    grid-column-start: 2;
+    grid-column-end:span 1;
+    grid-row-start:2;
+    font: bold;
+}
+.option2{
+    grid-column-start: 3;
+    grid-column-end:span 1;
+    grid-row-start:2;
+    font: bold;
+}
+.option3{
+    grid-column-start: 4;
+    grid-column-end:span 1;
+    grid-row-start:2;
+    font: bold;
+}
+.option4{
+    grid-column-start: 5;
+    grid-column-end:span 1;
+    grid-row-start:2;
+    font: bold;
+}
+.option5{
+    grid-column-start: 6;
+    grid-column-end:span 1;
+    grid-row-start:2;
+    font: bold;
+}
+.lesoffres{
+    grid-column-start: 7;
+    grid-column-end:span 1;
+    grid-row-start:2;
+}
+.laconnexion{
+    background: goldenrod;
+    grid-column-start: 1;
+    grid-column-end:span 1;
+    grid-row-start:3;
+}
+.image1{
+    grid-column-start: 2;
+    grid-column-end:span 1;
+    grid-row-start:3;
+}
+.image2{
+    grid-column-start: 3;
+    grid-column-end:span 1;
+    grid-row-start:3;
+}
+.image3{
+    grid-column-start: 4;
+    grid-column-end:span 1;
+    grid-row-start:3;
+}
+.image4{
+    grid-column-start: 5;
+    grid-column-end:span 1;
+    grid-row-start:3;
+}
+.image5{
+    grid-column-start: 6;
+    grid-column-end:span 1;
+    grid-row-start:3;
+}
+.lespartenaires{
+    grid-column-start: 7;
+    grid-column-end:span 1;
+    grid-row-start:3;
+}
+.uncompte{
+    background: goldenrod;
+    grid-column-start: 1;
+    grid-column-end:span 1;
+    grid-row-start:4;
+}
+.lemessage{
+    grid-column-start: 2;
+    grid-column-end:span 5;
+    grid-row-start:4;
+}
+.lesquestions{
+    grid-column-start: 7;
+    grid-column-end:span 1;
+    grid-row-start:4;
+   
+}
+.cartememebre{
+    background: goldenrod;
+    grid-column-start: 1;
+    grid-column-end:span 1;
+    grid-row-start:5;
+}
+.messageclient{
+    grid-column-start: 2;
+    grid-column-end:span 5;
+    grid-row-start:5;
+}
+.lesnews{
+    grid-column-start: 7;
+    grid-column-end:span 1;
+    grid-row-start:5;
+}
+.piedpage{
+    grid-column-start: 1;
+    grid-column-end:span 7;
+    grid-row-start:6;
+}
+/*
+.iframe{
+    widows: 100%; ;
+     border:2;
+     height: 180px;
+     width: 325px;
+}
+*/
+iframe{
+    width: 60%;
+    border: none;
+    height: 160px;
+}
+div.frame{
+    width: 70%;
+ margin: 10px 20px;
+ padding: 2px 30px;
+ background-color: white;
+ box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.frame-title{
+ font-size: 20px;
+ text-align: center;
+ margin-top: 5px;
+ margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 550px)
+{
+    .grid{
+        grid-template-columns: 1fr;
+        /*grid-template-rows: 1fr 1.2fr 5fr 2fr 8fr 1fr 1fr;*/
+        /*/grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 4fr 0.5fr 4fr 0.5fr 4fr 0.5fr 4fr 0.5fr 4fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 5fr 0.5 0.5;*/
+        grid-template-rows: auto;
+        grid-auto-columns: 3px;
+       
+    }
+
+
+iframe{
+    width: 100%;
+    border: none;
+    height: 260px;
+}
+div.frame{
+    width: 70%;
+ margin: 10px 20px;
+ padding: 2px 30px;
+ background-color: white;
+ box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.frame-title{
+ font-size: 20px;
+ text-align: center;
+ margin-top: 5px;
+ margin-bottom: 15px;
+}
+    /*  Les positionnements première colonne*/
+    .langues{
+        background: goldenrod;
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:1;
+    }
+    
+    .titre{
+        background: goldenrod;
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:2;
+    }
+   
+    .recherche{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:3;
+    }
+    .membres{
+        background: goldenrod;
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:4;
+    }
+    
+    .option1{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:5;
+        font: bold;
+    }
+    .image1{
+    
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:6;
+    }
+    .option2{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:7;
+        font: bold;
+    }
+    .image2{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:8;
+    }
+    .option3{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:9;
+        font: bold;
+    }
+    .image3{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:10;
+    }
+    .option4{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:11;
+        font: bold;
+    }
+    .image4{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:12;
+    }
+    .option5{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:13;
+        font: bold;
+    }
+    .image5{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:14;
+    }
+    .lesoffres{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:15;
+    }
+    .laconnexion{
+        background: goldenrod;
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:16;
+    }
+  
+   
+    .lespartenaires{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:17;
+    }
+    .uncompte{
+        background: goldenrod;
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:18;
+    }
+    .lemessage{
+        background-color: goldenrod;
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:19;
+    }
+    .lesquestions{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:20;
+       
+    }
+    .cartememebre{
+        background: goldenrod;
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:21;
+    }
+    .messageclient{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:22;
+    }
+    .lesnews{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:23;
+    }
+    .piedpage{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:24;
+    }
+    /*
+    .iframe{
+        widows: 100%; ;
+         border:2;
+         height: 180px;
+         width: 325px;
+    }
+    */
+
+
+
+
+
+
+
+
+
+
+    img.image1{
+        height: 90px;
+        margin-top: 50px;
+        width: 50%;
+    }
+    img.image2{
+        height: 90px;
+        margin-top: 50px;
+        width: 50%;
+
+    }
+    img.image3{
+        height: 90px;
+        margin-top: 50px;
+        width: 50%;
+    }
+    img.image4{
+        height: 90px;
+        margin-top: 50px;
+        width: 50%;
+    }
+    img.image5{
+        height: 90px;
+        margin-top: 50px;
+        width: 50%;
+    }
+
+   
+}
