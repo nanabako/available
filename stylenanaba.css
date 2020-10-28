@@ -248,111 +248,117 @@ div.frame{
         grid-column-end:span 1;
         grid-row-start:3;
     }
-    .membres{
-        background: goldenrod;
+    .lespartenaires{
         grid-column-start: 1;
         grid-column-end:span 1;
         grid-row-start:4;
     }
+    .lesoffres{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:5;
+    }
+   
     
     .option1{
         grid-column-start: 1;
         grid-column-end:span 1;
-        grid-row-start:5;
+        grid-row-start:6;
         font: bold;
     }
     .image1{
     
         grid-column-start: 1;
         grid-column-end:span 1;
-        grid-row-start:6;
+        grid-row-start:7;
     }
     .option2{
         grid-column-start: 1;
         grid-column-end:span 1;
-        grid-row-start:7;
+        grid-row-start:8;
         font: bold;
     }
     .image2{
         grid-column-start: 1;
         grid-column-end:span 1;
-        grid-row-start:8;
+        grid-row-start:9;
     }
     .option3{
         grid-column-start: 1;
         grid-column-end:span 1;
-        grid-row-start:9;
+        grid-row-start:10;
         font: bold;
     }
     .image3{
         grid-column-start: 1;
         grid-column-end:span 1;
-        grid-row-start:10;
+        grid-row-start:11;
     }
     .option4{
         grid-column-start: 1;
         grid-column-end:span 1;
-        grid-row-start:11;
+        grid-row-start:12;
         font: bold;
     }
     .image4{
         grid-column-start: 1;
         grid-column-end:span 1;
-        grid-row-start:12;
+        grid-row-start:13;
     }
     .option5{
         grid-column-start: 1;
         grid-column-end:span 1;
-        grid-row-start:13;
+        grid-row-start:14;
         font: bold;
     }
     .image5{
         grid-column-start: 1;
         grid-column-end:span 1;
-        grid-row-start:14;
-    }
-    .lesoffres{
-        grid-column-start: 1;
-        grid-column-end:span 1;
         grid-row-start:15;
     }
-    .laconnexion{
+    .membres{
         background: goldenrod;
         grid-column-start: 1;
         grid-column-end:span 1;
         grid-row-start:16;
     }
-  
-   
-    .lespartenaires{
+    .laconnexion{
+        background: goldenrod;
         grid-column-start: 1;
         grid-column-end:span 1;
         grid-row-start:17;
     }
+  
+   
+  
     .uncompte{
         background: goldenrod;
         grid-column-start: 1;
         grid-column-end:span 1;
         grid-row-start:18;
     }
-    .lemessage{
-        background-color: goldenrod;
-        grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:19;
-    }
-    .lesquestions{
-        grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:20;
-       
-    }
     .cartememebre{
         background: goldenrod;
         grid-column-start: 1;
         grid-column-end:span 1;
+        grid-row-start:19;
+    }
+
+    .lesquestions{
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:20;
+    }
+    .lemessage{
+        background-color: goldenrod;
+        grid-column-start: 1;
+        grid-column-end:span 1;
         grid-row-start:21;
     }
+   
+       
+  
+  
     .messageclient{
         grid-column-start: 1;
         grid-column-end:span 1;
@@ -368,6 +374,7 @@ div.frame{
         grid-column-end:span 1;
         grid-row-start:24;
     }
+}
     /*
     .iframe{
         widows: 100%; ;
@@ -384,7 +391,7 @@ div.frame{
 
 
 
-
+/*
 
     img.image1{
         height: 90px;
@@ -412,6 +419,6 @@ div.frame{
         margin-top: 50px;
         width: 50%;
     }
-
+*/
    
-}
+
