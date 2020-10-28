@@ -8,9 +8,27 @@
     <body>
 
     <div class="grid">
-        <div class="langues" style="background-color:  goldenrod;">Langues</div>
+        <div class="langues" style="background-color:  goldenrod;">
+            <form action="/action_page.php">
+                <label for="cars">Langage:</label>
+                <select name="langages" id="langages">
+                  <option value="en">English</option>
+                  <option value="es">Spanish</option>
+                  <option value="fr">French</option>
+                </select>
+                
+               <!--
+                <br><br>
+                <input type="submit" value="Submit">
+                -->
+              </form>
+        </div>
         <div class="titre" style="background-color:  goldenrod;">Titre</div>
-        <div class="recherche" style="background-color:  goldenrod;">Recherche</div>
+        <div class="recherche" style="background-color:  goldenrod;">
+            <input type="search" id="site-search" name="q"
+            aria-label="Search through site content">
+                        <button class="leboutoncherche">Search</button>
+        </div>
         <div class="membres" style="background-color:  goldenrod;">Membres</div>
         
         <div class="option1" style="background-color: lightblue;;">Electricité</div>
