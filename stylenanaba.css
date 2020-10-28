@@ -205,6 +205,7 @@ div.frame{
         /*/grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 4fr 0.5fr 4fr 0.5fr 4fr 0.5fr 4fr 0.5fr 4fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 5fr 0.5 0.5;*/
         grid-template-rows: auto;
         grid-auto-columns: 3px;
+        grid-row-gap: 1px;
        
     }
 
