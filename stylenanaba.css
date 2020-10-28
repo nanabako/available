@@ -38,20 +38,12 @@ body{
 }
 .grid{
     display: grid;
-   grid-template-columns: 1.5fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 1.5fr;
+   grid-template-columns: 1.5fr 1fr 2.5fr 2.5fr 2.5fr 2.5fr 1.5fr;
    /*grid-template-columns: auto auto auto auto auto auto auto;*/
-    grid-template-rows: 1fr 1.2fr 5fr 2fr 6fr 1fr 1fr;
+   /* grid-template-rows: 1fr 1.2fr 3fr 1fr 2fr 1fr 0.3fr;*/
+    grid-template-rows: auto;
     grid-column-gap: 5px;
     
-    grid-template-areas: 
-    
-    "langues titre recherche"
-    "membres option1 option2 option3 option4 option5 lesoffres"
-    "laconnexion image1 image2 image3 image4 image5 lespartenaires"
-    "uncompte lemessage lesquestions"
-    "cartememebre messageclient lesnews"
-    "piedpage piedpage piedpage"
-    ;
           
 }
 
@@ -199,7 +191,7 @@ body{
 iframe{
     width: 60%;
     border: none;
-    height: 160px;
+    height: 140px;
 }
 div.frame{
     width: 70%;
@@ -216,10 +208,13 @@ div.frame{
  margin-bottom: 15px;
 }
 
+
+/* ECRAN REDUIT */
+
 @media only screen and (max-width: 768px)
 {
     .body{
-        margin: 10;
+        margin: 3px;
         padding: 2px;
         font-family: Arial;
         line-height: 1.5;
@@ -227,6 +222,7 @@ div.frame{
        
      }
      .grid{
+         align-content: center;
         background-color: white; 
             margin: 2px 2px 2px 2px; 
             padding: 0px 1px 1px 1px;
@@ -236,16 +232,15 @@ div.frame{
         text-align: center;
     }
     .grid{
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.4fr 1fr;
         /*grid-template-rows: 1fr 1.2fr 5fr 2fr 8fr 1fr 1fr;*/
         /*/grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 4fr 0.5fr 4fr 0.5fr 4fr 0.5fr 4fr 0.5fr 4fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 5fr 0.5 0.5;*/
         grid-template-rows: auto;
-        grid-auto-columns: 3px;
+        grid-auto-columns: 2px;
         grid-row-gap: 1px;
        
     }
-
-
+ 
 iframe{
     width: 100%;
     border: none;
@@ -269,193 +264,155 @@ div.frame{
     .langues{
         background: goldenrod;
         grid-column-start: 1;
-        grid-column-end:span 1;
+        grid-column-end:span 2;
         grid-row-start:1;
     }
     
     .titre{
         background: goldenrod;
         grid-column-start: 1;
-        grid-column-end:span 1;
+        grid-column-end:span 2;
         grid-row-start:2;
     }
    
     .recherche{
         grid-column-start: 1;
-        grid-column-end:span 1;
+        grid-column-end:span 2;
         grid-row-start:3;
     }
     .lespartenaires{
         grid-column-start: 1;
-        grid-column-end:span 1;
+        grid-column-end:span 2;
         grid-row-start:4;
     }
     .lesoffres{
         grid-column-start: 1;
-        grid-column-end:span 1;
+        grid-column-end:span 2;
         grid-row-start:5;
     }
    
     
     .option1{
-        grid-column-start: 1;
+        background: beige;
+        width: auto;
+        height: auto;
+        grid-column-start: 2;
         grid-column-end:span 1;
         grid-row-start:6;
         font: bold;
     }
     .image1{
-    
+        grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:6;
+    }
+    .option2{
+        grid-column-start: 2;
+        grid-column-end:span 1;
+        grid-row-start:7;
+        font: bold;
+    }
+    .image2{
+        width: auto;
+        height: auto;
         grid-column-start: 1;
         grid-column-end:span 1;
         grid-row-start:7;
     }
-    .option2{
-        grid-column-start: 1;
+    .option3{
+        grid-column-start: 2;
         grid-column-end:span 1;
         grid-row-start:8;
         font: bold;
     }
-    .image2{
+    .image3{
+        width: auto;
+        height: auto;
+         grid-column-start: 1;
+        grid-column-end:span 1;
+        grid-row-start:8;
+    }
+    .option4{
+        grid-column-start: 2;
+        grid-column-end:span 1;
+        grid-row-start:9;
+        font: bold;
+    }
+    .image4{
+        width: auto;
+        height: auto;
         grid-column-start: 1;
         grid-column-end:span 1;
         grid-row-start:9;
     }
-    .option3{
-        grid-column-start: 1;
+    .option5{
+        grid-column-start: 2;
         grid-column-end:span 1;
         grid-row-start:10;
         font: bold;
     }
-    .image3{
-        grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:11;
-    }
-    .option4{
-        grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:12;
-        font: bold;
-    }
-    .image4{
-        grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:13;
-    }
-    .option5{
-        grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:14;
-        font: bold;
-    }
     .image5{
+        width: auto;
+        height: auto;
         grid-column-start: 1;
         grid-column-end:span 1;
-        grid-row-start:15;
+        grid-row-start:10;
     }
     .membres{
         background: goldenrod;
         grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:16;
+        grid-column-end:span 2;
+        grid-row-start:11;
     }
     .laconnexion{
         background: goldenrod;
         grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:17;
+        grid-column-end:span 2;
+        grid-row-start:12;
     }
-  
-   
   
     .uncompte{
         background: goldenrod;
         grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:18;
+        grid-column-end:span 2;
+        grid-row-start:13;
     }
     .cartememebre{
         background: goldenrod;
         grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:19;
+        grid-column-end:span 2;
+        grid-row-start:14;
     }
 
     .lesquestions{
         grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:20;
+        grid-column-end:span 2;
+        grid-row-start:15;
     }
     .lemessage{
         background-color: goldenrod;
         grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:21;
+        grid-column-end:span 2;
+        grid-row-start:16;
     }
-   
-       
-  
   
     .messageclient{
         grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:22;
+        grid-column-end:span 2;
+        grid-row-start:17;
     }
     .lesnews{
         grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:23;
+        grid-column-end:span 2;
+        grid-row-start:18;
     }
     .piedpage{
         grid-column-start: 1;
-        grid-column-end:span 1;
-        grid-row-start:24;
+        grid-column-end:span 2;
+        grid-row-start:19;
     }
 }
-    /*
-    .iframe{
-        widows: 100%; ;
-         border:2;
-         height: 180px;
-         width: 325px;
-    }
-    */
-
-
-
-
-
-
-
-
-/*
-
-    img.image1{
-        height: 90px;
-        margin-top: 50px;
-        width: 50%;
-    }
-    img.image2{
-        height: 90px;
-        margin-top: 50px;
-        width: 50%;
-
-    }
-    img.image3{
-        height: 90px;
-        margin-top: 50px;
-        width: 50%;
-    }
-    img.image4{
-        height: 90px;
-        margin-top: 50px;
-        width: 50%;
-    }
-    img.image5{
-        height: 90px;
-        margin-top: 50px;
-        width: 50%;
-    }
-*/
+    
+   
    
 
