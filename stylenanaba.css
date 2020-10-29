@@ -194,7 +194,7 @@ p.objetsite {
 */
 iframe{
     width: 60%;
-    border: none;
+    border: 4px;
     height: 140px;
 }
 div.frame{
