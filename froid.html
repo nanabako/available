@@ -40,6 +40,19 @@ body {
   text-align: center;
 }
 
+#mydiv{
+              position: absolute;
+              width: 30%;
+              height: 60px;
+              background-color: rgb(165, 236, 131);
+              color: black;
+              text-align: center;
+              top: 0;
+              animation: mymove 50s infinite;
+            }
+        @keyframes mymove {
+          50%{top: 450px;}
+        }
 /* Code pour mobiles */
 @media only screen and (max-width: 550px)
 {
@@ -75,6 +88,16 @@ body {
                 width: 50%;
                 vertical-align:middle;
             }
+
+            @keyframes mymove {
+          80%{top: 600px;}
+        }
+
+        #mydiv{
+          font-size: 10;
+          width: 60%;
+
+        }
             /*
             .item6{
                 display: none;
@@ -109,6 +132,9 @@ body {
   <div class="item item4">Les partenaires</div>
   <div class="item item5">Les delais d'exécution</div>
   <div class="item item6">La commande</div>
+</div>
+<div id="mydiv">
+  <h2>FROID</h2>
 </div>
 </body>
 </html>

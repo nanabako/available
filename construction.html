@@ -39,6 +39,20 @@ body {
   border: 10px solid groove;
   text-align: center;
 }
+#mydiv_construit{
+              position: absolute;
+              width: 30%;
+              height: 60px;
+              background-color: green;
+              color: white;
+              text-align: center;
+              top: 0;
+              animation: mymove_construit 50s infinite;
+            }
+        @keyframes mymove_construit {
+          50%{top: 450px;}
+        }
+
 
 /* Code pour mobiles */
 @media only screen and (max-width: 550px)
@@ -75,6 +89,26 @@ body {
                 width: 50%;
                 vertical-align:middle;
             }
+            #mydiv_construit{
+              position: absolute;
+              width: 30%;
+              height: 60px;
+              background-color: green;
+              color: white;
+              text-align: center;
+              top: 0;
+              animation: mymove_construit 50s infinite;
+            }
+          @keyframes mymove_construit {
+          80%{top: 600px;}
+           }
+
+        #mydiv_construit{
+          font-size: 10;
+          width: 60%;
+
+        }
+
             /*
             .item6{
                 display: none;
@@ -96,7 +130,6 @@ body {
         grid-template-rows: auto;
         grid-auto-columns: 2px;
         grid-row-gap: 1px;
-       
     }
     */
 }
@@ -110,5 +143,8 @@ body {
   <div class="item item5">Les delais d'exécution</div>
   <div class="item item6">La commande</div>
 </div>
+            <div id="mydiv_construit">
+              <h2>CONSTRUCTION</h2>
+            </div>
 </body>
 </html>
