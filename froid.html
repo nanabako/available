@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travaux et entretiens</title>
+   <!--<link rel="stylesheet" href="stylenanaba.css">    --> 
+</head>
+<style>
+.container {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 100px 30% 1fr;
+  grid-template-rows: 250px 200px;
+  grid-gap: 1rem;
+}
+
+
+/* OTHER STYLES */
+
+body {
+  margin-top: 50px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #8BA1BB;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+}
+
+.item {
+    background-color:  white;  
+    /*
+  background-image: linear-gradient(130deg, #e0cc13 0%, #ffffff 85%, #eedbb8 100%);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  */
+  color: #000;
+  border-radius: 4px;
+  border: 10px solid groove;
+  text-align: center;
+}
+
+/* Code pour mobiles */
+@media only screen and (max-width: 550px)
+{
+    body{
+      background-color: #8BA1BB;
+        margin: 10px;
+        padding: 10px;
+        font-family: Arial;
+        line-height: 1.5;
+        align-items:flex-start;
+     }
+     /*
+     body {
+ background-color: #8BA1BB;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+     .container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 20% 60% 60% 60% 60% 60%;
+            grid-gap: 1rem;
+            }
+          .item1{
+                text-align: center;
+                margin-left:25%;
+                margin-right: 25%;
+                align-content: center;
+                width: 50%;
+                vertical-align:middle;
+            }
+            /*
+            .item6{
+                display: none;
+            }
+
+            
+     .div{
+         align-content: top;
+        background-color: white; 
+            margin: 2px 2px 2px 2px; 
+            padding: 0px 1px 1px 1px;
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+            overflow: visible;
+        border: solid 1px white;
+        text-align: center;
+    }
+    .div{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-columns: 2px;
+        grid-row-gap: 1px;
+       
+    }
+    */
+}
+</style>
+<body>
+<div class="container">
+  <div class="item item1"><a href="index.html">Accueil</a></div>
+  <div class="item item2" style="font: bold; font-size:large;">Le froid</div>
+  <div class="item item3">Les domaines d'intervention</div>
+  <div class="item item4">Les partenaires</div>
+  <div class="item item5">Les delais d'exécution</div>
+  <div class="item item6">La commande</div>
+</div>
+</body>
+</html>
