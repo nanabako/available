@@ -26,13 +26,7 @@ body{
     grid-template-rows: auto;
     /*grid-column-gap: 5px;*/
     grid-gap: 0.2rem;
-          
 }
-/* 
-
-
-*/
-
 
 .langues{
     background: goldenrod;
