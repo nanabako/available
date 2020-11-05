@@ -217,7 +217,7 @@ div.frame{
 
 /* ECRAN REDUIT */
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 550px)
 {
     .body{
         margin: 3px;
