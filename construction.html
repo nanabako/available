@@ -8,10 +8,11 @@
 </head>
 <style>
 .container {
-  width: 1200px;
+  width: 700px;
+  height: 100%;
   display: grid;
-  grid-template-columns: 100px 30% 1fr;
-  grid-template-rows: 250px 200px;
+  grid-template-columns:  100%;
+  grid-template-rows: 80px 200px;
   grid-gap: 1rem;
 }
 
@@ -29,29 +30,26 @@ body {
 }
 
 .item {
-    background-color:  white;  
-    /*
-  background-image: linear-gradient(130deg, #e0cc13 0%, #ffffff 85%, #eedbb8 100%);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  */
+
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,rgb(192, 231, 192) , yellow);
+
   color: #000;
-  border-radius: 4px;
-  border: 10px solid groove;
+  border-radius: 20px;
+  border: 20px solid groove;
   text-align: center;
 }
-#mydiv_construit{
-              position: absolute;
-              width: 30%;
-              height: 60px;
-              background-color: green;
-              color: white;
-              text-align: center;
-              top: 0;
-              animation: mymove_construit 50s infinite;
-            }
-        @keyframes mymove_construit {
-          50%{top: 450px;}
-        }
+                  .item1{
+                      text-align: center;
+                      margin-left:15%;
+                      margin-right: 15%;
+                      align-content: center;
+                      width: 70%;
+                      vertical-align:middle;
+                      border-radius:6;
+                      border: solid green;
+                      margin-bottom: 10px;
+                  }
 
 
 /* Code pour mobiles */
@@ -74,79 +72,80 @@ body {
   align-items: center;
 }
 */
-     .container {
-            width: 100%;
+.container {
+            width: 80%;
+            height: 70%;
             display: grid;
             grid-template-columns: auto;
-            grid-template-rows: 20% 60% 60% 60% 60% 60%;
+            grid-template-rows: 20% 80% ;
             grid-gap: 1rem;
             }
-          .item1{
-                text-align: center;
-                margin-left:25%;
-                margin-right: 25%;
-                align-content: center;
-                width: 50%;
-                vertical-align:middle;
-            }
-            #mydiv_construit{
-              position: absolute;
-              width: 30%;
-              height: 60px;
-              background-color: green;
-              color: white;
-              text-align: center;
-              top: 0;
-              animation: mymove_construit 50s infinite;
-            }
-          @keyframes mymove_construit {
-          80%{top: 600px;}
-           }
 
-        #mydiv_construit{
-          font-size: 10;
-          width: 60%;
-
-        }
-
-            /*
-            .item6{
-                display: none;
-            }
-
-            
-     .div{
-         align-content: top;
-        background-color: white; 
-            margin: 2px 2px 2px 2px; 
-            padding: 0px 1px 1px 1px;
-            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
-            overflow: visible;
-        border: solid 1px white;
-        text-align: center;
-    }
-    .div{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-auto-columns: 2px;
-        grid-row-gap: 1px;
-    }
-    */
+.construction{
+font-size: 15px;
+}    
 }
 </style>
 <body>
 <div class="container">
   <div class="item item1">
     <a href="index.html">Accueil</a>
+    <h2 class="construction">La construction</h2>
   </div>
-  <div class="item item2" style="font: bold; font-size:large;">La construction</div>
-  <div class="item item3">Les domaines d'intervention</div>
-  <div class="item item4">Les partenaires</div>
-  <div class="item item5">Les delais d'exécution</div>
-  <div class="item item6">La commande</div>
-</div>
-            <div id="mydiv_construit">
-              <h2>CONSTRUCTION</h2>
+  <div class="item item2" style="font: bold; font-size:large;" id="grad2">Précisez votre besoin
+    <form class="w3-container">
+      <table style="background-color: greenyellow; width: 100%; align-self: center;">
+        <tr>
+            <td>
+                <label>Prénom</label>
+            </td>
+              <td>
+                <input class="w3-input" type="text">
+            
+            </td>
+          </tr>
+          <tr>
+                  <td>
+                      <label>Nom</label>
+                    </td>  
+                    <td>
+                      <input class="w3-input" type="text">
+                </td>
+          </tr>
+          <tr>
+            <td>
+            <label>Email</label>
+            </td>
+            <td>
+            <input class="w3-input" type="email">
+         
+        </td>
+        </tr>
+                <tr>
+                  <td>
+                    <label>Numéro</label>
+                  </td>
+                  <td>
+                    <input class="w3-input" type="password">
+                </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="vertical-align: 0px;">
+                    <textarea id="subject" name="subject" placeholder="Description précise de l'ensemble de vos besoins" style="height:150px; width: 100%;"></textarea>
+                  </td>
+                </tr>
+  </table>
+    </form>
+     <form>
+      <input type="button" value="Envoyer le message" onclick="msg()" style="background-color: greenyellow;">
+    </form>
+      
+      <script>
+        function msg() {
+          alert("Envoi prévu de votre demande");
+        }
+        </script>
+  </div>
             </div>
 </body>
 </html>
